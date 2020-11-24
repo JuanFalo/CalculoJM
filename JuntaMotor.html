@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Calculo de junta de motor</title>
+	<link rel="stylesheet" type="text/css" href="estilo.css">
+	<script src="be.js"></script>
+</head>
+<body>
+	
+	<h1>Calculo de junta de motor</h1>
+	<div>
+		<label>Volumen de bajo block [cm]:</label>
+		<input type="number" id="Vbb" class="numIn">
+	</div>
+	<div>
+		<label>Volumen de la tapa [cm]:&nbsp;&nbsp;&nbsp;&nbsp;</label>
+		<input type="number" id="Vt" class="numIn">
+	</div>
+	<div>
+		<label>Diametro del cilindro [cm]:&nbsp;&nbsp;</label>
+		<input type="number" id="Dc" class="numIn">
+	</div>
+	<div>
+		<label>Carrera del cilindro [cm]:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</label>
+		<input type="number" id="Cc" class="numIn">	
+	</div>
+	<div>	
+		<label>Espesor de junta [cm]:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</label>
+		<input type="number" id="Ej" class="numIn">
+	</div>
+	<div>
+		<label>Diametro de junta [cm]:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</label>
+		<input type="number" id="Dj" class="numIn">
+	</div>
+	
+	<p>
+		<input type="button" class="BotCal" value="Calculate" onclick = "Calcular()">
+		<output class="txt"  id="texto" value="0.0"></output>
+		[Cm<sup>3</sup>]
+	</p> 
+	<img src="https://ci.phncdn.com/videos/202008/06/340028171/original/(m=eaf8Ggaaaa)(mh=L69ELoD6v8aW5kZ-)1.jpg">
+</body>
+</html>
