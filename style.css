@@ -1,0 +1,79 @@
+* {
+	background-color: #010;
+}
+div{
+	margin: 0px;
+	padding: 0px;
+	background-color: #032149;
+}
+a{
+	background-color: #032149;
+}
+
+.config{
+	margin: 0px;
+	padding: 0px;
+	background-color: #032149;
+	margin-right: 0%;
+	margin-left: 50%;
+	align-content: center;
+}
+.titulo{
+	margin: 0px;
+	padding: 0px;
+	color: #ededed;
+	background-color: #032149;
+	font-size: 78px;
+	margin: 0;
+	padding: 0;
+}
+.menuTabla{
+	color: #ededed;
+	background-color: #032149;
+	font-size: 50px;
+	margin: 0;
+	padding: 0;
+	border: 2px solid #ededed;
+	margin-bottom: 20px;
+}
+
+.customButton{
+	color: #ededed;
+	background-color: #032149;
+	font-size: 30px;
+	text-decoration-color: #ededed;
+	margin: 0;
+	border-radius: 50px 50px 50px 50px;
+	padding: 0;
+	width: 200px;
+	height: 100px;
+
+}
+.contenidoTabla{
+	font-size: 40px;
+	color: #ededed;
+	text-align: center;
+	height: 700px;
+	overflow-y: auto;
+}
+
+.contenidoTabla::-webkit-scrollbar	{
+	width: 7px;
+}
+.contenidoTabla::-webkit-scrollbar-thumb{
+	background: blue;
+	border-radius: 5px;
+}
+.stockDisp{
+	width: 200px;
+	height: 200px;
+	color:#ededed ;
+	background-color: #010;
+	font-size: 60px;
+	margin: 20px;
+}
+.btnDetalle{
+	width: 200px;
+	height: 200px;
+}
+

@@ -1,0 +1,396 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Stock de paletas de AP</title>
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<script src="https://cdn.jsdelivr.net/npm/pouchdb@7.2.1/dist/pouchdb.min.js"></script>
+	<script type="text/javascript" src="indexCode.js"></script>
+</head>
+<body>
+	<div>
+		<label class="titulo">Stock de paletas de AP </label>
+		<a href="config.html">
+			<input class="config" type="image" name="config" src="img/901829-200.png" width="75px" height="75px">
+		</a>
+	</div>
+	<table width="100%">
+		<thead><tr class="menuTabla" >
+			<th style="border-right: 5px solid #ededed; border-bottom: 5px solid #ededed; width: 19.5%;">Imagen</th>
+			<th style="border-right: 5px solid #ededed; border-bottom: 5px solid #ededed; width: 20%;">Modelo</th>
+			<th style="border-right: 5px solid #ededed; border-bottom: 5px solid #ededed; width: 19.5%;">Precio particular</th>
+			<th style="border-right: 5px solid #ededed; border-bottom: 5px solid #ededed; width: 19.5%;">Precio profesor	</th>
+			<th style="border-bottom: 5px solid #ededed; width: 21.5%;">Cantidad</th></tr></thead>
+	</table>
+
+	<div width="100%" class="contenidoTabla">
+		<table width="100%">
+			<tbody>
+			<tr>
+				<td style="border-right: 5px solid #ededed;">
+					<input type="image" src="img\CARBON DUO FULL CARBONO.jpg" onclick="alert('aca van los detalles de las paletas')" class="btnDetalle"></td>
+				<td style="border-right: 5px solid #ededed; width: 20%;">CARBON DUO FULL CARBONO</td>
+				<td style="border-right: 5px solid #ededed; ">
+					<input type="button" class="customButton" name="-" id="CarbonDuoFullProf" onclick="ventaParticular(1)">
+				</td>
+				<td style="border-right: 5px solid #ededed; ">
+					<input type="button" class="customButton" name="-" id="CarbonDuoFullPart" onclick="ventaProfesor(1)">
+				</td>
+				<td><label class="stockDisp" id="PagPrincStock1"></label></td></tr>
+			<tr>
+				<td style="border-right: 5px solid #ededed;border-top:5px solid #ededed;">
+					<input type="image" src="img\CARBON DUO.jpg" onclick="alert('aca van los detalles de las paletas')" class="btnDetalle">
+				</td>
+				<td style="border-right: 5px solid #ededed;border-top:5px solid #ededed;">CARBON DUO</td>
+				<td style="border-right: 5px solid #ededed;border-top:5px solid #ededed;">
+					<input type="button" class="customButton" name="-" id="CarbonDuoProf" onclick="ventaParticular(2)">
+				</td>
+				<td style="border-right: 5px solid #ededed;border-top:5px solid #ededed;">
+					<input type="button" class="customButton" name="-" id="CarbonDuoPart" onclick="ventaProfesor(2)">
+				</td>
+				<td style="border-top:5px solid #ededed;"><label class="stockDisp" id="PagPrincStock2"></label>	</td></tr>
+			<tr>
+				<td style="border-right: 5px solid #ededed;border-top:5px solid #ededed;">
+					<input type="image" src="img/CONDOR EVO.jpg" onclick="alert('aca van los detalles de las paletas')" class="btnDetalle">
+				</td>
+				<td style="border-right: 5px solid #ededed;border-top:5px solid #ededed;">CONDOR EVO</td>
+				<td style="border-right: 5px solid #ededed;border-top:5px solid #ededed;">
+					<input type="button" class="customButton" name="-" id="CarbonEVOProf" onclick="ventaParticular(3)">
+				</td>
+				<td style="border-right: 5px solid #ededed;border-top:5px solid #ededed;">
+					<input type="button" class="customButton" name="-" id="CarbonEVOPart" onclick="ventaProfesor(3)">
+				</td>
+				<td style="border-top:5px solid #ededed;"><label class="stockDisp" id="PagPrincStock3"></label></td></tr>
+			<tr>
+				<td style="border-right: 5px solid #ededed;border-top:5px solid #ededed;">
+					<input type="image" src="img/CONIC ENERGY FULL CARBONO.jpg" onclick="alert('aca van los detalles de las paletas')" class="btnDetalle">
+				</td>
+				<td style="border-right: 5px solid #ededed;border-top:5px solid #ededed;">
+					CONIC ENERGY FULL CARBONO
+				</td>
+				<td style="border-right: 5px solid #ededed;border-top:5px solid #ededed;">
+					<input type="button" class="customButton" name="-" id="ConicEnergFullProf" onclick="ventaParticular(4)">
+				</td>
+				<td style="border-right: 5px solid #ededed;border-top:5px solid #ededed;">
+					<input type="button" class="customButton" name="-" id="ConicEnergFullPart" onclick="ventaProfesor(4)">
+				</td>
+				<td style="border-top:5px solid #ededed;"><label class="stockDisp" id="PagPrincStock4"></label></td></tr>
+			<tr>
+				<td style="border-right: 5px solid #ededed;border-top:5px solid #ededed;">
+					<input type="image" src="img/CONIC ENERGY.jpg" onclick="alert('aca van los detalles de las paletas')" class="btnDetalle">
+				</td>
+				<td style="border-right: 5px solid #ededed;border-top:5px solid #ededed;">
+					CONIC ENERGY
+				</td>
+				<td style="border-right: 5px solid #ededed;border-top:5px solid #ededed;">
+					<input type="button" class="customButton" name="-" id="ConicEnergProf" onclick="ventaParticular(5)">
+				</td>
+				<td style="border-right: 5px solid #ededed;border-top:5px solid #ededed;">
+					<input type="button" class="customButton" name="-" id="ConicEnergPart" onclick="ventaProfesor(5)">
+				</td>
+				<td style="border-top:5px solid #ededed;"><label class="stockDisp" id="PagPrincStock5"></label></td></tr>
+			<tr>
+				<td style="border-right: 5px solid #ededed;border-top:5px solid #ededed;">
+					<input type="image" src="img/ESPECTRA.jpg" onclick="alert('aca van los detalles de las paletas')" class="btnDetalle">
+				</td>
+				<td style="border-right: 5px solid #ededed;border-top:5px solid #ededed;">
+					ESPECTRA
+				</td>
+				<td style="border-right: 5px solid #ededed;border-top:5px solid #ededed;">
+					<input type="button" class="customButton" name="-" id="EspectraProf" onclick="ventaParticular(6)">
+				</td>
+				<td style="border-right: 5px solid #ededed;border-top:5px solid #ededed;">
+					<input type="button" class="customButton" name="-" id="EspectraPart" onclick="ventaProfesor(6)">
+				</td>
+				<td style="border-top:5px solid #ededed;"><label class="stockDisp" id="PagPrincStock6"></label></td></tr>
+			<tr>
+				<td style="border-right: 5px solid #ededed;border-top:5px solid #ededed;">
+					<input type="image" src="img/EUPHORIA.jpg" onclick="alert('aca van los detalles de las paletas')" class="btnDetalle">
+				</td>
+				<td style="border-right: 5px solid #ededed;border-top:5px solid #ededed;">EUPHORIA</td>
+				<td style="border-right: 5px solid #ededed;border-top:5px solid #ededed;">
+					<input type="button" class="customButton" name="-" id="EuphoriaProf" onclick="ventaParticular(7)">
+				</td>
+				<td style="border-right: 5px solid #ededed;border-top:5px solid #ededed;">
+					<input type="button" class="customButton" name="-" id="EuphoriaPart" onclick="ventaProfesor(7)">
+				</td>
+				<td style="border-top: 5px solid #ededed;"><label class="stockDisp" id="PagPrincStock7"></label></td></tr>
+			<tr>
+				<td style="border-right: 5px solid #ededed;border-top:5px solid #ededed;">
+					<input type="image" src="img/GRAN PATAGONIA.jpg" onclick="alert('aca van los detalles de las paletas')" class="btnDetalle">
+				</td>
+				<td style="border-right: 5px solid #ededed;border-top:5px solid #ededed;">GRAN PATAGONIA</td>
+				<td style="border-right: 5px solid #ededed;border-top:5px solid #ededed;">
+					<input type="button" class="customButton" name="-" id="GranPatagoniaProf" onclick="ventaParticular(8)">
+				</td>
+				<td style="border-right: 5px solid #ededed;border-top:5px solid #ededed;">
+					<input type="button" class="customButton" name="-" id="GranPatagoniaPart" onclick="ventaProfesor(8)">
+				</td>
+				<td style="border-top:5px solid #ededed;"><label class="stockDisp" id="PagPrincStock8"></label></td></tr>
+			<tr>
+				<td style="border-right: 5px solid #ededed;border-top:5px solid #ededed;">
+					<input type="image" src="img/LEIRBAG.jpg" onclick="alert('aca van los detalles de las paletas')" class="btnDetalle">
+				</td>
+				<td style="border-right: 5px solid #ededed;border-top:5px solid #ededed;">LEIRBAG</td>
+				<td style="border-right: 5px solid #ededed;border-top:5px solid #ededed;">
+					<input type="button" class="customButton" name="-" id="LeirBagProf" onclick="ventaParticular(9)">
+				</td>
+				<td style="border-right: 5px solid #ededed;border-top:5px solid #ededed;">
+					<input type="button" class="customButton" name="-" id="LeirBagPart" onclick="ventaProfesor(9)">
+				</td>
+				<td style="border-top:5px solid #ededed;"><label class="stockDisp" id="PagPrincStock9"></label></td></tr>
+			<tr>
+				<td style="border-right: 5px solid #ededed;border-top:5px solid #ededed;">
+					<input type="image" src="img/MAX D3 FULL CARBONO.jpg" onclick="alert('aca van los detalles de las paletas')" class="btnDetalle">
+				</td>
+				<td style="border-right: 5px solid #ededed;border-top:5px solid #ededed;">MAX D3 FULL CARBONO</td>
+				<td style="border-right: 5px solid #ededed;border-top:5px solid #ededed;">
+					<input type="button" class="customButton" name="-" id="MaxD3FullCarbonProf" onclick="ventaParticular(10)">
+				</td>
+				<td style="border-right: 5px solid #ededed;border-top:5px solid #ededed;">
+					<input type="button" class="customButton" name="-" id="MaxD3FullCarbonPart" onclick="ventaProfesor(10)">
+				</td>
+				<td style="border-top:5px solid #ededed;"><label class="stockDisp" id="PagPrincStock10"></label></td></tr>
+			<tr>
+				<td style="border-right: 5px solid #ededed;border-top:5px solid #ededed;">
+					<input type="image" src="img/MAX D3.jpg" onclick="alert('aca van los detalles de las paletas')" class="btnDetalle">
+				</td>
+				<td style="border-right: 5px solid #ededed;border-top:5px solid #ededed;">MAX D3</td>
+				<td style="border-right: 5px solid #ededed;border-top:5px solid #ededed;">
+					<input type="button" class="customButton" name="-" id="MaxD3Prof" onclick="ventaParticular(11)">
+				</td>
+				<td style="border-right: 5px solid #ededed;border-top:5px solid #ededed;">
+					<input type="button" class="customButton" name="-" id="MaxD3Part" onclick="ventaProfesor(11)">
+				</td>
+				<td style="border-top:5px solid #ededed;"><label class="stockDisp" id="PagPrincStock11"></label></td></tr>
+			<tr>
+				<td style="border-right: 5px solid #ededed;border-top:5px solid #ededed;">
+				<input type="image" src="img/MAX D5 FULL CARBONO.jpg" onclick="alert('aca van los detalles de las paletas')" class="btnDetalle">
+				</td>
+				<td style="border-right: 5px solid #ededed;border-top:5px solid #ededed;">MAX D5 FULL CARBONO</td>
+				<td style="border-right: 5px solid #ededed;border-top:5px solid #ededed;">
+					<input type="button" class="customButton" name="-" id="MaxD5FullCarbonProf" onclick="ventaParticular(12)">
+				</td>
+				<td style="border-right: 5px solid #ededed;border-top:5px solid #ededed;">
+					<input type="button" class="customButton" name="-" id="MaxD5FullCarbonPart" onclick="ventaProfesor(12)">
+				</td>
+				<td style="border-top:5px solid #ededed;"><label class="stockDisp" id="PagPrincStock12"></label></td></tr>
+			<tr>
+				<td style="border-right: 5px solid #ededed;border-top:5px solid #ededed;">
+					<input type="image" src="img/MAX D5.jpg" onclick="alert('aca van los detalles de las paletas')" class="btnDetalle">
+				</td>
+				<td style="border-right: 5px solid #ededed;border-top:5px solid #ededed;">
+					MAX D5
+				</td>
+				<td style="border-right: 5px solid #ededed;border-top:5px solid #ededed;">
+					<input type="button" class="customButton" name="-" id="MaxD5Prof" onclick="restoStock(13)">
+				</td>
+				<td style="border-right: 5px solid #ededed;border-top:5px solid #ededed;">
+					<input type="button" class="customButton" name="-" id="MaxD5Part" onclick="restoStock(13)">
+				</td>
+				<td style="border-top:5px solid #ededed;">
+					<label class="stockDisp" id="PagPrincStock13"></label></td></tr>
+			<tr>
+				<td style="border-right: 5px solid #ededed;border-top:5px solid #ededed;">
+					<input type="image" src="img/PAMPA DX2.jpg" onclick="alert('aca van los detalles de las paletas')" class="btnDetalle">
+				</td>
+				<td style="border-right: 5px solid #ededed;border-top:5px solid #ededed;">
+					PAMPA DX2
+				</td>
+				<td style="border-right: 5px solid #ededed;border-top:5px solid #ededed;">
+					<input type="button" class="customButton" name="-" id="PampaDX2Prof" onclick="restoStock(14)">
+				</td>
+				<td style="border-right: 5px solid #ededed;border-top:5px solid #ededed;">
+					<input type="button" class="customButton" name="-" id="PampaDX2Part" onclick="restoStock(14)">
+				</td>
+				<td style="border-top:5px solid #ededed;">
+					<label class="stockDisp" id="PagPrincStock14"></label></td></tr>
+			<tr>
+				<td style="border-right: 5px solid #ededed;border-top:5px solid #ededed;">
+					<input type="image" src="img/PRISMA FULL CARBONO.jpg" onclick="alert('aca van los detalles de las paletas')" class="btnDetalle">
+				</td>
+				<td style="border-right: 5px solid #ededed;border-top:5px solid #ededed;">
+					PRISMA FULL CARBONO
+				</td>
+				<td style="border-right: 5px solid #ededed;border-top:5px solid #ededed;">
+					<input type="button" class="customButton" name="-" id="PrisFullCarobProf" onclick="restoStock(15)">
+				</td>
+				<td style="border-right: 5px solid #ededed;border-top:5px solid #ededed;">
+					<input type="button" class="customButton" name="-" id="PrisFullCarobPart" onclick="restoStock(15)">
+				</td>
+				<td style="border-top:5px solid #ededed;">
+					<label class="stockDisp" id="PagPrincStock15"></label></td>	</tr>
+			<tr>
+				<td style="border-right: 5px solid #ededed;border-top:5px solid #ededed;">
+					<input type="image" src="img/PRISMA.jpg" onclick="alert('aca van los detalles de las paletas')" class="btnDetalle">
+				</td>
+				<td style="border-right: 5px solid #ededed;border-top:5px solid #ededed;">
+					PRISMA
+				</td>
+				<td style="border-right: 5px solid #ededed;border-top:5px solid #ededed;">
+					<input type="button" class="customButton" name="-" id="PrismaProf" onclick="restoStock(16)">
+				</td>
+				<td style="border-right: 5px solid #ededed;border-top:5px solid #ededed;">
+					<input type="button" class="customButton" name="-" id="PrismaPart" onclick="restoStock(16)">
+				</td>
+				<td style="border-top:5px solid #ededed;">
+					<label class="stockDisp" id="PagPrincStock16"></label>
+				</td></tr>
+			<tr>
+				<td style="border-right: 5px solid #ededed;border-top:5px solid #ededed;">
+					<input type="image" src="img/ROBER 12 FULL CARBONO.jpg" onclick="alert('aca van los detalles de las paletas')" class="btnDetalle">
+				</td>
+				<td style="border-right: 5px solid #ededed;border-top:5px solid #ededed;">
+					ROBER 12 FULL CARBONO
+				</td>
+				<td style="border-right: 5px solid #ededed;border-top:5px solid #ededed;">
+					<input type="button" class="customButton" name="-" id="Rob12FulCarbonProf" onclick="restoStock(17)">
+				</td>
+				<td style="border-right: 5px solid #ededed;border-top:5px solid #ededed;">
+					<input type="button" class="customButton" name="-" id="Rob12FulCarbonPart" onclick="restoStock(17)">
+				</td>
+				<td style="border-top:5px solid #ededed;">
+					<label class="stockDisp" id="PagPrincStock17"></label>
+				</td></tr>
+			<tr>
+				<td style="border-right: 5px solid #ededed;border-top:5px solid #ededed;">
+					<input type="image" src="img/ROBER 12.jpg" onclick="alert('aca van los detalles de las paletas')" class="btnDetalle">
+				</td>
+				<td style="border-right: 5px solid #ededed;border-top:5px solid #ededed;">
+					ROBER 12
+				</td>
+				<td style="border-right: 5px solid #ededed;border-top:5px solid #ededed;">
+					<input type="button" class="customButton" name="-" id="MaxD5Prof" onclick="restoStock(18)">
+				</td>
+				<td style="border-right: 5px solid #ededed;border-top:5px solid #ededed;">
+					<input type="button" class="customButton" name="-" id="MaxD5Part" onclick="restoStock(18)">
+				</td>
+				<td style="border-top:5px solid #ededed;">
+					<label class="stockDisp" id="PagPrincStock18"></label>
+				</td>
+			</tr>
+			<tr>
+				<td style="border-right: 5px solid #ededed;border-top:5px solid #ededed;">
+					<input type="image" src="img/ROBER 8.jpg" onclick="alert('aca van los detalles de las paletas')" class="btnDetalle">
+				</td>
+				<td style="border-right: 5px solid #ededed;border-top:5px solid #ededed;">
+					ROBER 8
+				</td>
+				<td style="border-right: 5px solid #ededed;border-top:5px solid #ededed;">
+					<input type="button" class="customButton" name="-" id="Rober8Prof" onclick="restoStock(19)">
+				</td>
+				<td style="border-right: 5px solid #ededed;border-top:5px solid #ededed;">
+					<input type="button" class="customButton" name="-" id="Rober8Part" onclick="restoStock(19)">
+				</td>
+				<td style="border-top:5px solid #ededed;">
+					<label class="stockDisp" id="PagPrincStock19"></label>
+				</td>
+			</tr>
+			<tr>
+				<td style="border-right: 5px solid #ededed;border-top:5px solid #ededed;">
+					<input type="image" src="img/ROBER PLATINUM.jpg" onclick="alert('aca van los detalles de las paletas')" class="btnDetalle">
+				</td>
+				<td style="border-right: 5px solid #ededed;border-top:5px solid #ededed;">
+					ROBER PLATINUM
+				</td>
+				<td style="border-right: 5px solid #ededed;border-top:5px solid #ededed;">
+					<input type="button" class="customButton" name="-" id="MaxD5Prof" onclick="restoStock(20)">
+				</td>
+				<td style="border-right: 5px solid #ededed;border-top:5px solid #ededed;">
+					<input type="button" class="customButton" name="-" id="MaxD5Part" onclick="restoStock(20)">
+				</td>
+				<td style="border-top:5px solid #ededed;">
+					<label class="stockDisp" id="PagPrincStock20"></label>
+				</td>
+			</tr>
+			<tr>
+				<td style="border-right: 5px solid #ededed;border-top:5px solid #ededed;">
+					<input type="image" src="img/SAURUS.jpg" onclick="alert('aca van los detalles de las paletas')" class="btnDetalle">
+				</td>
+				<td style="border-right: 5px solid #ededed;border-top:5px solid #ededed;">
+					SAURUS
+				</td>
+				<td style="border-right: 5px solid #ededed;border-top:5px solid #ededed;">
+					<input type="button" class="customButton" name="-" id="SaurusProf" onclick="restoStock(21)">
+				</td>
+				<td style="border-right: 5px solid #ededed;border-top:5px solid #ededed;">
+					<input type="button" class="customButton" name="-" id="SaurusPart" onclick="restoStock(21)">
+				</td>
+				<td style="border-top:5px solid #ededed;">
+					<label class="stockDisp" id="PagPrincStock21"></label>
+				</td>
+			</tr>
+			<tr>
+				<td style="border-right: 5px solid #ededed;border-top:5px solid #ededed;">
+					<input type="image" src="img/SUR DELUXE FULL CARBONO.jpg" onclick="alert('aca van los detalles de las paletas')" class="btnDetalle">
+				</td>
+				<td style="border-right: 5px solid #ededed;border-top:5px solid #ededed;">
+					SUR DELUXE FULL CARBONO
+				</td>
+				<td style="border-right: 5px solid #ededed;border-top:5px solid #ededed;">
+					<input type="button" class="customButton" name="-" id="SurDeluxFullCarbonProf" onclick="restoStock(22)">
+				</td>
+				<td style="border-right: 5px solid #ededed;border-top:5px solid #ededed;">
+					<input type="button" class="customButton" name="-" id="SurDeluxFullCarbonPart" onclick="restoStock(22)">
+				</td>
+				<td style="border-top:5px solid #ededed;">
+					<label class="stockDisp" id="PagPrincStock22"></label>
+				</td>
+			</tr>
+			<tr>
+				<td style="border-right: 5px solid #ededed;border-top:5px solid #ededed;">
+					<input type="image" src="img/SUR DELUXE.jpg" onclick="alert('aca van los detalles de las paletas')" class="btnDetalle">
+				</td>
+				<td style="border-right: 5px solid #ededed;border-top:5px solid #ededed;">
+					SUR DELUXE
+				</td>
+				<td style="border-right: 5px solid #ededed;border-top:5px solid #ededed;">
+					<input type="button" class="customButton" name="-" id="SurDeluxeProf" onclick="restoStock(23)">
+				</td>
+				<td style="border-right: 5px solid #ededed;border-top:5px solid #ededed;">
+					<input type="button" class="customButton" name="-" id="SurDeluxePart" onclick="restoStock(23)">
+				</td>
+				<td style="border-top:5px solid #ededed;">
+					<label class="stockDisp" id="PagPrincStock23"></label>
+				</td>
+			</tr>
+			<tr>
+				<td style="border-right: 5px solid #ededed;border-top:5px solid #ededed;">
+					<input type="image" src="img/TUGA.jpg" onclick="alert('aca van los detalles de las paletas')" class="btnDetalle">
+				</td>
+				<td style="border-right: 5px solid #ededed;border-top:5px solid #ededed;">
+					TUGA
+				</td>
+				<td style="border-right: 5px solid #ededed;border-top:5px solid #ededed;">
+					<input type="button" class="customButton" name="-" id="TugaProf" onclick="restoStock(24)">
+				</td>
+				<td style="border-right: 5px solid #ededed;border-top:5px solid #ededed;">
+					<input type="button" class="customButton" name="-" id="TugaPart" onclick="restoStock(24)">
+				</td>
+				<td style="border-top:5px solid #ededed;">
+					<label class="stockDisp" id="PagPrincStock24"></label>
+				</td>
+			</tr>
+			<tr>
+				<td style="border-right: 5px solid #ededed;border-top:5px solid #ededed;">
+					<input type="image" src="img/VULKAN.jpg" onclick="alert('aca van los detalles de las paletas')" class="btnDetalle">
+				</td>
+				<td style="border-right: 5px solid #ededed;border-top:5px solid #ededed;">
+					VULKAN
+				</td>
+				<td style="border-right: 5px solid #ededed;border-top:5px solid #ededed;">
+					<input type="button" class="customButton" name="-" id="VulkanProf" onclick="restoStock(25)">
+				</td>
+				<td style="border-right: 5px solid #ededed;border-top:5px solid #ededed;">
+					<input type="button" class="customButton" name="-" id="VulkanPart" onclick="restoStock(25)">
+				</td>
+				<td style="border-top:5px solid #ededed;">
+					<label class="stockDisp" id="PagPrincStock25"></label>
+				</td>
+			</tr>
+			</tbody>
+		</table>
+	</div>
+</body>
+</html>

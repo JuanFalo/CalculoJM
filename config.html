@@ -1,0 +1,271 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Configuraci&oacuten</title>
+	<link rel="stylesheet" type="text/css" href="configStyle.css">
+	<script src="https://cdn.jsdelivr.net/npm/pouchdb@7.2.1/dist/pouchdb.min.js"></script>
+	<script type="text/javascript" src="configCode.js"></script>
+</head>
+<body>
+	<h1 class="tituloConfig">Configuraci&oacuten de stock</h1>
+	
+	<br><br>
+
+	<table width="100%" class="regVentas">
+		<thead class="regVentasHead" >
+			<tr class="menuTabla" >
+				<th style="background-color: #032149; width: 6%">Modelo</th>
+				<th style="background-color: #032149; width: 3%">Precio base [$]</th>
+				<th style="background-color: #032149; width: 4%">Ganancia a profesor [%]</th>
+				<th style="background-color: #032149; width: 4%">Ganancia a particular [%]</th>
+				<th style="background-color: #032149; width: 4%">Stock</th>
+			</tr>
+		</thead>
+	</table>
+<div width="100%" class="contenidoTabla-precios">
+
+	<table width="100%">
+		<tbody class="contenidoTabla" style=" height: 600px">
+			<tr>
+				<td style="width: 6%;">CARBON DUO FULL CARBONO</td>
+				<td style="width: 2%;"><input type="number" id="PB1"  value= "0" class="customInNumb"></td>
+				<td style="width: 4%;"><input type="number" id="GPR1" value= "0" class="customInNumb"></td>
+				<td style="width: 5%;"><input type="number" id="GPA1" value= "0" class="customInNumb"></td>
+				<td style="width: 1%;"><input type="number" id="ST1"  value= "0" class="customInNumb"></td>
+			</tr>
+			<tr>
+				<td>CARBON DUO</td>
+				<td><input type="number" value= "0" id="PB2"  class="customInNumb"></td>
+				<td><input type="number" value= "0" id="GPR2" class="customInNumb"></td>
+				<td><input type="number" value= "0" id="GPA2" class="customInNumb"></td>
+				<td><input type="number" value= "0" id="ST2"  class="customInNumb"></td>
+			</tr>
+			<tr>
+				<td>CONDOR EVO</td>
+				<td><input type="number" value= "0" id="PB3"  class="customInNumb"></td>
+				<td><input type="number" value= "0" id="GPR3" class="customInNumb"></td>
+				<td><input type="number" value= "0" id="GPA3" class="customInNumb"></td>
+				<td><input type="number" value= "0" id="ST3"  class="customInNumb"></td>
+			</tr>
+			<tr>
+				<td>CONIC ENERGY FULL CARBONO</td>
+				<td><input type="number" value= "0" id="PB4"  class="customInNumb"></td>
+				<td><input type="number" value= "0" id="GPR4" class="customInNumb"></td>
+				<td><input type="number" value= "0" id="GPA4" class="customInNumb"></td>
+				<td><input type="number" value= "0" id="ST4"  class="customInNumb"></td>
+			</tr>
+			<tr>
+				<td>CONIC ENERGY</td>
+				<td><input type="number" value= "0" id="PB5"  class="customInNumb"></td>
+				<td><input type="number" value= "0" id="GPR5" class="customInNumb"></td>
+				<td><input type="number" value= "0" id="GPA5" class="customInNumb"></td>
+				<td><input type="number" value= "0" id="ST5"  class="customInNumb"></td>
+			</tr>
+			<tr>
+				<td>ESPECTRA</td>
+				<td><input type="number" value= "0" id="PB6"  class="customInNumb"></td>
+				<td><input type="number" value= "0" id="GPR6" class="customInNumb"></td>
+				<td><input type="number" value= "0" id="GPA6" class="customInNumb"></td>
+				<td><input type="number" value= "0" id="ST6"  class="customInNumb"></td>
+			</tr>
+			<tr>
+				<td>EUPHORIA</td>
+				<td><input type="number" value= "0" id="PB7"  class="customInNumb"></td>
+				<td><input type="number" value= "0" id="GPR7" class="customInNumb"></td>
+				<td><input type="number" value= "0" id="GPA7" class="customInNumb"></td>
+				<td><input type="number" value= "0" id="ST7"  class="customInNumb"></td>
+			</tr>
+			<tr>
+				<td>GRAN PATAGONIA</td>
+				<td><input type="number" value= "0" id="PB8"  class="customInNumb"></td>
+				<td><input type="number" value= "0" id="GPR8" class="customInNumb"></td>
+				<td><input type="number" value= "0" id="GPA8" class="customInNumb"></td>
+				<td><input type="number" value= "0" id="ST8"  class="customInNumb"></td>
+			</tr>
+			<tr>
+				<td>LEIRBAG</td>
+				<td><input type="number" value= "0" id="PB9"  class="customInNumb"></td>
+				<td><input type="number" value= "0" id="GPR9" class="customInNumb"></td>
+				<td><input type="number" value= "0" id="GPA9" class="customInNumb"></td>
+				<td><input type="number" value= "0" id="ST9"  class="customInNumb"></td>
+			</tr>
+			<tr>
+				<td>MAX D3 FULL CARBON</td>
+				<td><input type="number" value= "0" id="PB10"  class="customInNumb"></td>
+				<td><input type="number" value= "0" id="GPR10" class="customInNumb"></td>
+				<td><input type="number" value= "0" id="GPA10" class="customInNumb"></td>
+				<td><input type="number" value= "0" id="ST10"  class="customInNumb"></td>
+			</tr>
+			<tr>
+				<td>MAX D3</td>
+				<td><input type="number" value= "0" id="PB11"  class="customInNumb"></td>
+				<td><input type="number" value= "0" id="GPR11" class="customInNumb"></td>
+				<td><input type="number" value= "0" id="GPA11" class="customInNumb"></td>
+				<td><input type="number" value= "0" id="ST11"  class="customInNumb"></td>
+			</tr>
+			<tr>
+				<td>MAX D5 FULL CARBON</td>
+				<td><input type="number" value= "0" id="PB12"  class="customInNumb"></td>
+				<td><input type="number" value= "0" id="GPR12" class="customInNumb"></td>
+				<td><input type="number" value= "0" id="GPA12" class="customInNumb"></td>
+				<td><input type="number" value= "0" id="ST12"  class="customInNumb"></td>
+			</tr>
+			<tr>
+				<td>MAX D5</td>
+				<td><input type="number" value= "0" id="PB13"  class="customInNumb"></td>
+				<td><input type="number" value= "0" id="GPR13" class="customInNumb"></td>
+				<td><input type="number" value= "0" id="GPA13" class="customInNumb"></td>
+				<td><input type="number" value= "0" id="ST13 " class="customInNumb"></td>
+			</tr>
+			<tr>
+				<td>PAMPA DX2</td>
+				<td><input type="number" value= "0" id="PB14 " class="customInNumb"></td>
+				<td><input type="number" value= "0" id="GPR14" class="customInNumb"></td>
+				<td><input type="number" value= "0" id="GPA14" class="customInNumb"></td>
+				<td><input type="number" value= "0" id="ST14 " class="customInNumb"></td>
+			</tr>
+			<tr>
+				<td>PRISMA FULL CARBON</td>
+				<td><input type="number" value= "0" id="PB15 "  class="customInNumb"></td>
+				<td><input type="number" value= "0" id="GPR15"  class="customInNumb"></td>
+				<td><input type="number" value= "0" id="GPA15"  class="customInNumb"></td>
+				<td><input type="number" value= "0" id="ST15 "  class="customInNumb"></td>
+			</tr>
+			<tr>
+				<td>PRISMA</td>
+				<td><input type="number" value= "0" id="PB16 "  class="customInNumb"></td>
+				<td><input type="number" value= "0" id="GPR16"  class="customInNumb"></td>
+				<td><input type="number" value= "0" id="GPA16"  class="customInNumb"></td>
+				<td><input type="number" value= "0" id="ST16 "  class="customInNumb"></td>
+			</tr>
+			<tr>
+				<td>ROBER 12 FULL CARBON</td>
+				<td><input type="number" value= "0" id="PB17 "  class="customInNumb"></td>
+				<td><input type="number" value= "0" id="GPR17"  class="customInNumb"></td>
+				<td><input type="number" value= "0" id="GPA17"  class="customInNumb"></td>
+				<td><input type="number" value= "0" id="ST17 "  class="customInNumb"></td>
+			</tr>
+			<tr>
+				<td>ROBER 12</td>
+				<td><input type="number" value= "0" id="PB18 "  class="customInNumb"></td>
+				<td><input type="number" value= "0" id="GPR18"  class="customInNumb"></td>
+				<td><input type="number" value= "0" id="GPA18"  class="customInNumb"></td>
+				<td><input type="number" value= "0" id="ST18 "  class="customInNumb"></td>
+			</tr>
+			<tr>
+				<td>ROBER 8</td>
+				<td><input type="number" value= "0" id="PB19 "  class="customInNumb"></td>
+				<td><input type="number" value= "0" id="GPR19"  class="customInNumb"></td>
+				<td><input type="number" value= "0" id="GPA19"  class="customInNumb"></td>
+				<td><input type="number" value= "0" id="ST19 "  class="customInNumb"></td>
+			</tr>
+			<tr>
+				<td>ROBER PLATINUM</td>
+				<td><input type="number" value= "0" id="PB20"  class="customInNumb"></td>
+				<td><input type="number" value= "0" id="GPR20"  class="customInNumb"></td>
+				<td><input type="number" value= "0" id="GPA20"  class="customInNumb"></td>
+				<td><input type="number" value= "0" id="ST20"  class="customInNumb"></td>
+			</tr>
+			<tr>
+				<td>SAURUS</td>
+				<td><input type="number" value= "0" id="PB21"  class="customInNumb"></td>
+				<td><input type="number" value= "0" id="GPR21" class="customInNumb"></td>
+				<td><input type="number" value= "0" id="GPA21" class="customInNumb"></td>
+				<td><input type="number" value= "0" id="ST21"  class="customInNumb"></td>
+			</tr>
+			<tr>
+				<td>SUR DELUXE FULL CARBON</td>
+				<td><input type="number" value= "0" id="PB2"  class="customInNumb"></td>
+				<td><input type="number" value= "0" id="GPR22" class="customInNumb"></td>
+				<td><input type="number" value= "0" id="GPA22" class="customInNumb"></td>
+				<td><input type="number" value= "0" id="ST22 " class="customInNumb"></td>
+			</tr>
+			<tr>
+				<td>SUR DELUXE</td>
+				<td><input type="number" value= "0" id="PB23 " class="customInNumb"></td>
+				<td><input type="number" value= "0" id="GPR23" class="customInNumb"></td>
+				<td><input type="number" value= "0" id="GPA23" class="customInNumb"></td>
+				<td><input type="number" value= "0" id="ST23"  class="customInNumb"></td>
+			</tr>
+			<tr>
+				<td>TUGA</td>
+				<td><input type="number" value= "0" id="PB24"  class="customInNumb"></td>
+				<td><input type="number" value= "0" id="GPR24" class="customInNumb"></td>
+				<td><input type="number" value= "0" id="GPA24" class="customInNumb"></td>
+				<td><input type="number" value= "0" id="ST24"  class="customInNumb"></td>
+			</tr>
+			<tr>
+				<td>VULKAN</td>
+				<td><input type="number" value= "0" id="PB25"  class="customInNumb"></td>
+				<td><input type="number" value= "0" id="GPR25" class="customInNumb"></td>
+				<td><input type="number" value= "0" id="GPA25" class="customInNumb"></td>
+				<td><input type="number" value= "0" id="ST25 " class="customInNumb"></td>
+			</tr>
+		</tbody>
+	</table>
+</div>
+	<br><br>
+
+	<h2>Registro de ventas</h2>
+
+	<br><br>
+
+	<table class="regVentas" width="100%">
+		<thead class="regVentasHead">
+			<tr>
+				<th style="background-color: #032149; width: 10%">Fecha</th>
+				<th style="background-color: #032149; width: 10%">Modelo</th>
+				<th style="background-color: #032149; width: 10%">Ganancia</th>
+				<th style="background-color: #032149; width: 10%">Stock</th>
+			</tr>
+		</thead>
+	</table>
+	<div width="100%">
+		<table>
+			<tbody class="regVentasBody" style="height: 200px">
+				<tr>
+					<td style="width:4.4%;">68</td>
+					<td style="width: 5%;">684646</td>
+					<td style="width: 6%;">684646</td>
+					<td style="width: 4%;">684646</td>
+				</tr>
+				<tr>
+					<td>684646</td>
+					<td>684646</td>
+					<td>684646</td>
+					<td>684646</td>
+				</tr>
+				
+			</tbody>
+		</table>
+	</div>
+
+	<br> <br><br> <br>
+
+	<h2>Rendimiento</h2>
+	
+	<br> <br>
+
+	<table class="rendim" width="100%">
+		<tr>
+			<td>Ganancia mensual:</td>
+			<td>$ 4000</td>
+		</tr>
+		<tr>
+			<td>Ganancia semanal:</td>
+			<td>$ 4000</td>
+		</tr>
+		<tr>
+			<td>Ganancia diaria:</td>
+			<td>$ 4000</td>
+		</tr>
+	</table>	
+	<DIV style="margin-left: 50%;">
+		<a href="index.html">
+			<input class="btnComan" type="button" name="save"   value="Guardar" onclick="guardarBaseDatos()">
+			<input class="btnComan" type="button" name="cancel" value="Cancelar" >
+			</a>
+	</DIV>
+
+</body>
+</html>

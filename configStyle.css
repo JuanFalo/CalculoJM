@@ -1,0 +1,102 @@
+* {
+	background-color: #010;
+}
+body::-webkit-scrollbar{
+	width: 7px;	
+}
+body::-webkit-scrollbar-thumb{
+	background: #032149;
+	border-radius: 10px;
+}
+
+.tituloConfig,h2{
+	margin: 0px;
+	padding: 0px;
+	color: #ededed;
+	background-color: #032149;
+	font-size: 78px;
+	margin: 0;
+	padding: 0;
+}
+.menuTabla, .rendim{
+	color: #ededed;
+	background-color: #032149;
+	font-size: 45px;
+	margin: 0;
+	padding: 0;
+	border: 2px solid #ededed;
+	margin-bottom: 20px;
+}
+.contenidoTabla-precios{
+	height: 700px;
+	overflow-y: auto;
+	width: 100%;
+}
+.contenidoTabla-precios::-webkit-scrollbar{
+	width: 7px;
+}
+.contenidoTabla-precios::-webkit-scrollbar-thumb{
+	background: #032149;
+	border-radius: 10px;
+}
+
+
+/*Desde aca empieza el registro de ventas */
+
+.regVentas{
+	width: 100%;
+	color: #ededed;
+	font-size: 40px;
+	margin: 0;
+	padding: 0;
+	border: 2px solid #ededed;
+}
+.regVentasHead {
+	background-color: #032149;
+}
+.regVentasBody	{
+    overflow-y: auto;
+    text-align: center;
+    width: 100%;
+	color: #ededed;
+	font-size: 40px;
+	margin: 0;
+	padding: 0;
+	border: 2px solid #ededed;
+}
+
+/*aca termina el registro de ventas*/
+
+
+.customInNumb{
+	color: #ededed;
+	background-color: #032149;
+	font-size: 30px;
+	text-decoration-color: #ededed;
+	margin: 0;
+	border-radius: 50px 50px 50px 50px;
+	padding: 0;
+	width: 200px;
+	height: 100px;
+	text-align: center;
+}
+
+.contenidoTabla{
+	font-size: 30px;
+	color: #ededed;
+	text-align: center;
+}
+
+.btnDetalle{
+	width: 200px;
+	height: 200px;
+
+}
+
+.btnComan{
+	width: 300px;
+	height: 100px;
+	background-color: #032149;
+	color: #ededed;
+	font-size: 50px;
+}
